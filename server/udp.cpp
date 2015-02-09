@@ -32,6 +32,7 @@ public:
 
 	void Send()
 	{
+		printf( "udp echo server: %s\n", m_buf );
 		m_sending = true;
 		if( !BeginSendTo( m_sck, m_buf, sizeof( m_buf ), &m_peer ) )
 			delete this;

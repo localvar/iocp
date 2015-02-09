@@ -71,6 +71,7 @@ public:
 				m_result = m_cmd.a / m_cmd.b;
 			break;
 		}
+		printf( "math server: %d %c %d = %d\n", m_cmd.a, m_cmd.op, m_cmd.b, m_result );
 		Send();
 	}
 

@@ -30,6 +30,7 @@ public:
 
 	void Send()
 	{
+		printf( "tcp echo server: %s\n", m_buf );
 		m_sending = true;
 		if( !BeginSend( m_sck, m_buf, sizeof( m_buf ) ) )
 			delete this;
